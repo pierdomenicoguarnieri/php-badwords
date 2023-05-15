@@ -6,15 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/css/bootstrap.min.css' integrity='sha512-SbiR/eusphKoMVVXysTKG/7VseWii+Y3FdHrt0EpKgpToZeemhqHeZeLWLhJutz/2ut2Vw1uQEj2MbRF+TVBUA==' crossorigin='anonymous'/>
+    <link rel="shortcut icon" href="assets/img/favicon.png" type="png">
     <title>PHP Badwords</title>
   </head>
   <body>
     <main>
       <div class="pg-content-wrapper d-flex align-items-center">
-        <div class="container py-5 rounded-3 d-flex justify-content-center">
-          <form action="assets/php/form-response.php" class="w-75" method="POST">
+        <div class="container py-5 rounded-3 flex-column d-flex align-items-center text-white">
+          <h1>Benvenuto in Bad Words!</h1>
+          <span>Inserisci un testo ed una parola da censurare!</span>
+          <form action="assets/php/form-response.php" class="w-75 mt-4" method="POST" target="_blank">
             <textarea name="message" class="form-control mb-4" placeholder="Inserisci il testo"></textarea>
-            <input type="text" name="message" class="form-control mb-4" placeholder="Inserisci la parola da censurare">
+            <input type="text" name="word" class="form-control mb-4" placeholder="Inserisci la parola da censurare">
             <input type="submit" value="Submit" class="btn btn-warning">
           </form>
         </div>
