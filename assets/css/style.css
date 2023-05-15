@@ -1,0 +1,14 @@
+body{
+  background-color: rgba(0, 0, 0, 0.8) !important;
+}
+
+.pg-content-wrapper{
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.container{
+  background-color: rgba(0, 0, 0, 0.6) !important;
+  box-shadow:0 0 20px rgba(0, 0, 0, 0.8);
+}
