@@ -32,7 +32,7 @@
         <p><?php echo ucfirst($paragraphCensored) ?></p>
 
         <!-- Stampo a schermo la lunghezza del testo censurato tramite l'uso di echo e strlen -->
-        <p>Lunghezza del testo censurato: <span class="text-warning"><?php echo strlen($paragraphCensored) ?></span></p>
+        <p>Lunghezza del testo censurato: <span class="text-warning"><?php echo strlen($paragraph) ?> caratteri</span></p>
 
         <p>La parola censurata è: <span class="text-danger"><?php echo $word ?></span></p>
       </div>
