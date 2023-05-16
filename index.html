@@ -13,11 +13,18 @@
     <main>
       <div class="pg-content-wrapper d-flex align-items-center">
         <div class="container py-5 rounded-3 flex-column d-flex align-items-center text-white">
+
           <h1>Benvenuto in Bad Words!</h1>
+
           <span>Inserisci un testo ed una parola da censurare!</span>
+
+          <!-- Il form ha come metodo Post e punta (tramite l'action) sul file php che gestisce i dati del form -->
           <form action="assets/php/form-response.php" class="w-75 mt-4" method="POST" target="_blank">
+
             <textarea name="message" class="form-control mb-4" placeholder="Inserisci il testo"></textarea>
+
             <input type="text" name="word" class="form-control mb-4" placeholder="Inserisci la parola da censurare">
+
             <input type="submit" value="Submit" class="btn btn-warning">
           </form>
         </div>

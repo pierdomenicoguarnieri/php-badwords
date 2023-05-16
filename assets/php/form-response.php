@@ -1,8 +1,10 @@
 <?php 
 
+  // Salvo in due variabili ciò che arriva dal form
   $paragraph = $_POST['message'];
   $word = $_POST['word'];
 
+  // Creo una variabile che contiene il paragrafo originale, ma con la parola da censurare sostituita da tre asterischi.
   $paragraphCensored = str_replace(strtolower($word), '***', strtolower($paragraph));
 
 ?>
@@ -19,20 +21,22 @@
   <title>Form Results</title>
 </head>
 <body>
-<main>
-      <div class="pg-content-wrapper d-flex align-items-center">
-        <div class="container py-5 rounded-3 d-flex flex-column align-items-center text-white">
-          <h1>Bad Words!</h1>
+  <main>
+    <div class="pg-content-wrapper d-flex align-items-center">
+      <div class="container py-5 rounded-3 d-flex flex-column align-items-center text-white">
+        <h1>Bad Words!</h1>
 
-          <h4>Ecco il tuo testo censurato:</h4>
+        <h4>Ecco il tuo testo censurato:</h4>
 
-          <p><?php echo ucfirst($paragraphCensored) ?></p>
+        <!-- Stampo a schermo il testo censurato tramite l'uso di echo -->
+        <p><?php echo ucfirst($paragraphCensored) ?></p>
 
-          <p>Lunghezza del testo censurato: <span class="text-warning"><?php echo strlen($paragraphCensored) ?></span></p>
+        <!-- Stampo a schermo la lunghezza del testo censurato tramite l'uso di echo e strlen -->
+        <p>Lunghezza del testo censurato: <span class="text-warning"><?php echo strlen($paragraphCensored) ?></span></p>
 
-          <p>La parola censurata è: <span class="text-danger"><?php echo $word ?></span></p>
-        </div>
+        <p>La parola censurata è: <span class="text-danger"><?php echo $word ?></span></p>
       </div>
-    </main>
+    </div>
+  </main>
 </body>
 </html>
